@@ -1,6 +1,7 @@
 :root{
   --text-green: #54B56A;
-  --tab-green: #73D88B;
+  --tab-green: #73d88b4d;
+  --tab-green-dark: #73D88B;
   --light-green: #DEFFE6;
   --yellow: #EAFB27;
 }
@@ -313,4 +314,62 @@ section#care {
   left: 40%;
   top: 55%;
   transform: translate(-50%, -50%);
+}
+
+/* ----------- LOCATIONS SECTION ------------------ */
+section#locations {
+  padding: 1rem 0;
+  background-color: var(--light-green);
+}
+
+#locations .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+}
+
+.locations__image img {
+  max-width: 100%;
+}
+
+.locations__text {
+  padding-left: 2rem;
+  width: 100%;
+  position: relative;
+}
+
+.locations__text .location__marker {
+  position: absolute;
+  top: -1rem;
+  right: 0;
+}
+
+.locations__text h3 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.location-tabs div {
+  background-color: var(--tab-green);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  display: inline-block;
+  align-items: center;
+  border-radius: 1rem;
+  width: fit-content;
+}
+
+.location-tabs div span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  background-color: var(--tab-green-dark);
+}
+
+.location-tabs div p {
+  display: inline;
 }
