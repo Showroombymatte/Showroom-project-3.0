@@ -449,9 +449,19 @@ section#products {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-x: scroll;
+  overflow-x: scroll; 
+}
+
+.products__slider::-webkit-scrollbar {
+  display: none;
+}
+
+.product__button {
+  display: flex;
+  justify-content: center;
 }
 
 #products .circle-btn {
+  display: inline-block;
   text-align: center;
 }
