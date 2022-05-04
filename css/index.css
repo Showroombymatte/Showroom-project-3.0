@@ -16,7 +16,11 @@
 html, body {
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
-} 
+}
+
+.wrapper {
+  position: relative;
+}
 
 .wrapper::before {
   content: " ";
@@ -40,6 +44,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Amatic SC', cursive;
 }
 
+p {
+  line-height: 1.7;
+}
+
 /* -------------- UTILITY CLASSES ------------------- */
 
 .container {
@@ -50,8 +58,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .circle-btn {
   display: inline-block;
-  padding: 0.4rem;
-  border: 15px solid transparent;
+  padding: 0.6rem;
+  border: 20px solid transparent;
   background-color: transparent;
   background: url('../images/button-circle.png') no-repeat center center/cover;
   outline: none;
@@ -63,6 +71,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .circle-btn:hover {
   transform: scale(1.1);
+}
+
+/* -------------- PRELOADER ---------- */
+.preloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--yellow);
+}
+
+.preloader.hide {
+  display: none;
 }
 
 /* --------------- HEADER ----------- */
@@ -88,13 +114,17 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   font-family: 'Amatic SC', cursive;
   background: none;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-/* ----------------- HERO ------------------ */
-#hero {
+#menu-btn:hover {
+  color: var(--text-green);
+}
+
+/* ----------------- HERO SECTION ------------------ */
+section#hero {
   position: relative;
   min-height: 80vh;
   display: flex;
@@ -102,6 +132,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .hero__lottie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 0;left: 0;
   width: 100%;
@@ -123,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero__text h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   line-height: 1.3;
   margin-bottom: 1.5rem;
 }
@@ -149,6 +182,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero__form input {
   padding: 1rem;
   font-size: 1rem;
+  font-family: inherit;
   border: none;
   outline: none;
   border-radius: 0.5rem;
@@ -156,14 +190,14 @@ h1, h2, h3, h4, h5, h6 {
   width: 60%;
 }
 
-/* -------------- AIM ----------- */
-#aim {
+/* -------------- AIM SECTION ----------- */
+section#aim {
   padding: 2rem 0;
 }
 
 #aim .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 3fr;
   grid-gap: 1rem;
   align-items: center;
 }
@@ -172,10 +206,111 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+.aim__text .small-tree {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+}
+
 .aim__title {
   text-align: center;
 }
 
 .aim__title img {
   width: 12rem;
+}
+
+.aim__text p {
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.aim__plastic-recycling {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.aim__plastic-recycling img {
+  margin-right: 1rem;
+}
+
+.aim__plastic-recycling h3 {
+  font-size: 3rem;
+}
+
+.aim__lottie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* ----------- WORK SECTION ------------------ */
+section#work {
+  padding: 1rem 0;
+}
+
+#work .container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-gap: 1rem;
+  align-items: center;
+}
+
+.work__lottie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work__title {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.work__title span {
+  color: var(--text-green);
+}
+
+.work__title span::before {
+  content: " ";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -150%;
+  background: url('../images/arrow-curve-down.svg') no-repeat center center/contain;
+}
+
+.work__text p {
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.work__text button {
+  font-size: 2.1rem;
+  padding: 0.8rem;
+}
+
+/* -------------- CARE SECTION -------------- */
+section#care {
+  background: url('../images/bg-vector.png') no-repeat center center/cover;
+  padding: 8rem 0;
+}
+
+.care__lottie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.care__lottie h2 {
+  font-size: 3.5rem;
+  position: absolute;
+  left: 40%;
+  top: 55%;
+  transform: translate(-50%, -50%);
 }

@@ -16,6 +16,17 @@
     <title>Reuse</title>
   </head>
   <body>
+    <div class="preloader">
+      <lottie-player
+        src="lottie/Preloader.json"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px"
+        loop
+        autoplay
+      ></lottie-player>
+    </div>
+
     <div class="wrapper">
       <header id="header">
         <div class="container">
@@ -63,16 +74,20 @@
         <section id="aim">
           <div class="container">
             <div class="aim__text">
+              <img
+                src="images/small-tree.png"
+                alt="small tree"
+                class="small-tree"
+              />
               <div class="aim__title">
                 <img src="images/aim.png" alt="aim" />
               </div>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Cumque, adipisci. Itaque voluptatibus qui libero nisi non
-                voluptate perferendis repellat animi, officiis, error illum
-                maxime maiores laborum tenetur distinctio pariatur hic id
-                dolorem accusantium, ad possimus. Quod dignissimos nam impedit
-                vel!
+                Our aim is to encourage paper recycling through our recycled
+                paper products and volunteer programs across the world.. Through
+                these activities we are able to save our earth and trees from
+                constant deforestation for the peoduction of new paper
+                profducts.
               </p>
               <div class="aim__plastic-recycling">
                 <img src="images/Bottle.svg" alt="bottle" />
@@ -94,7 +109,65 @@
             </div>
           </div>
         </section>
+
+        <section id="work">
+          <div class="container">
+            <div class="work__lottie">
+              <lottie-player
+                src="lottie/Landing Man 2.json"
+                background="transparent"
+                speed="1"
+                style="width: 100%; height: 100%"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+            <div class="work__text">
+              <h2 class="work__title">
+                <s>Walk</s> <span>Work</span> The Talk
+              </h2>
+              <p>
+                It is important to us that people understand the concept of
+                recycling and its benefit. To build a sustainable and
+                eco-friendly environment all hands must be on deck. Support the
+                cause of saving our trees by engaging in our volunteer programs
+                where you can actively partcipate in making the world a better
+                place.
+              </p>
+              <button class="circle-btn">Volunteer</button>
+            </div>
+          </div>
+        </section>
+
+        <section id="care">
+          <div class="bg"></div>
+          <div class="container">
+            <div class="care__lottie">
+              <lottie-player
+                src="lottie/Care.json"
+                background="transparent"
+                speed="1"
+                style="width: 100%; height: 100%"
+                loop
+                autoplay
+              >
+              </lottie-player>
+              <h2>
+                200,000,000 Trees <br />
+                Are Cut Yearly For <br />
+                Paper
+              </h2>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
+
+    <script>
+      const preloader = document.querySelector(".preloader");
+      window.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => preloader.classList.add("hide"), 5000);
+      });
+    </script>
   </body>
 </html>
