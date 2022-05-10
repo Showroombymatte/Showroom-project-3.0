@@ -10,4 +10,6 @@ closeMenu.addEventListener('click', () => {
   menu.classList.remove('active');
 })
 
-window.onscroll = () => menu.classList.remove('active');
+if (window.innerWidth < 600) {
+  window.onscroll = () => menu.classList.remove('active');
+}

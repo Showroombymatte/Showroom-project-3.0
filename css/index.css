@@ -33,9 +33,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.5;
+  opacity: 1;
   z-index: -1;
-  background: url('../images/paper-bg.png') repeat center center/cover;
+  background: url('../images/bg.jpg') repeat center center/cover fixed;
 }
 
 a {
@@ -66,6 +66,12 @@ p {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+@media (min-width: 1500px) {
+  .container {
+    max-width: 85%;
+  }
 }
 
 .circle-btn {
@@ -225,7 +231,7 @@ p {
 /* ----------------- HERO SECTION ------------------ */
 section#hero {
   position: relative;
-  min-height: 80vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
 }
@@ -240,6 +246,11 @@ section#hero {
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+
+#hero .hero__lottie lottie-player {
+  width: 100%;
+  height: 100%;
 }
 
 #hero .container {
@@ -402,6 +413,11 @@ section#care {
   padding: 8rem 0;
 }
 
+section#care .container {
+  max-width: 100%;
+  padding: 0;
+}
+
 .care__lottie {
   display: flex;
   align-items: center;
@@ -503,22 +519,17 @@ section#volunteering {
   text-align: center;
 }
 
-.volunteering__text h2 {
-  font-size: 4.5rem;
-  font-weight: 700;
+.volunteering__title {
+  display: flex;
+  align-items: center;
   margin-bottom: 2rem;
-  position: relative;
-  display: inline-block;
 }
 
-.volunteering__text h2::after {
-  content: " ";
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  top: 0;
-  right: -6rem;
-  background: url('../images/arrow-curve-left.svg') no-repeat center center/contain;
+.volunteering__title h2 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
 }
 
 .volunteering__text p {
