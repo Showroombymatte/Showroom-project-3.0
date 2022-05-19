@@ -23,6 +23,7 @@ body {
 
 .wrapper {
   position: relative;
+  background-color: rgba(240, 240, 240, 0.2);
 }
 
 .wrapper::before {
@@ -261,7 +262,7 @@ section#programs {
 }
 
 #programs .programs__title h2 {
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-weight: 700;
 }
 
@@ -310,4 +311,118 @@ section#programs {
   position: absolute;
   bottom: -5rem;
   right: 50%;
+}
+
+
+/* ------------- TESTIMONIALS SECTION -------------- */
+section#testimonials {
+  padding: 2rem 0;
+}
+
+.testimonials__title {
+  position: relative;
+  margin-bottom: 1rem;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials__title img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.testimonials__title h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-size: 4.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.testimonials__title h2 span {
+  color: var(--text-green);
+}
+
+.testimonials__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.testimonial__box {
+  padding: 3rem 1.5rem 5rem;
+  border: 2px solid var(--tab-green-dark);
+  min-width: 400px;
+  min-height: 450px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fcfcfc;
+  border-radius: 50% 50% 0 0;
+}
+
+.testimonial__box:nth-child(3) {
+  max-width: 600px;
+}
+
+.testimonial__box .testimonial__profile {
+  width: 150px;
+  margin-bottom: 2rem;
+}
+
+.testimonial__box .testimonial__text h4 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+
+/* ------------ VOLUNTEERS SECTION -------------- */
+section#volunteers {
+  padding: 5rem 0;
+  position: relative;
+}
+
+section#volunteers>img {
+  position: absolute;
+  top: 5rem;
+  left: 10%;
+  width: 180px;
+}
+
+.volunteers__title h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.volunteers__text {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.volunteers__text h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.volunteers__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.volunteers__image img {
+  width: 50rem;
 }
