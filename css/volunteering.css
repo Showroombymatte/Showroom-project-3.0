@@ -299,6 +299,11 @@ section#programs {
   width: 100%;
 }
 
+.program__attend .cloud {
+  width: 400px;
+  top: -8rem;
+}
+
 .program__community-dev .program__text,
 .program__recycle-educator .program__text {
   position: relative;
@@ -445,6 +450,14 @@ section#schedule .schedule-bg {
 .volunteer__schedule {
   max-width: 550px;
   margin: 0 auto 2rem;
+  position: relative;
+}
+
+.volunteer__schedule>img {
+  width: 100px;
+  position: absolute;
+  left: -30%;
+  top: -50%;
 }
 
 .volunteer__schedule h2 {
@@ -708,6 +721,10 @@ section#schedule .schedule-bg {
     width: 120px;
   }
 
+  .volunteer__schedule>img {
+    position: unset;
+  }
+
   #register__form {
     width: 95%;
   }
@@ -832,8 +849,13 @@ section#schedule .schedule-bg {
     font-size: 4rem;
   }
 
+  #programs .programs__title {
+    justify-content: center;
+  }
+
   #programs .programs__title h2 {
     font-size: 2rem;
+    margin-left: 1rem;
   }
 
   #programs .programs__title img {
