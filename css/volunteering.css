@@ -307,9 +307,8 @@ section#programs {
 .program__community-dev .program__text img,
 .program__recycle-educator .program__text img {
   width: 80px;
-  position: absolute;
-  bottom: -5rem;
-  right: 50%;
+  display: block;
+  margin: 0 auto;
 }
 
 
@@ -395,6 +394,7 @@ section#volunteers>img {
   top: 10rem;
   left: 10%;
   width: 180px;
+  z-index: -1;
 }
 
 .volunteers__title h2 {
@@ -536,7 +536,7 @@ section#schedule .schedule-bg {
 }
 
 .form-component .form-control {
-  background-color: var(--light-green);
+  background-color: rgba(115, 216, 139, 0.2);
   width: 100%;
   padding: 0.5rem 1rem;
   height: 50px;
@@ -547,6 +547,7 @@ section#schedule .schedule-bg {
 
 #register__form .message-input {
   grid-area: message;
+  resize: none;
 }
 
 #register__form #register-btn {
@@ -558,6 +559,7 @@ section#schedule .schedule-bg {
   padding: 0.6rem 1.5rem;
   margin-top: 1rem;
   border: none;
+  border-radius: 0.5rem;
 }
 
 
@@ -686,6 +688,26 @@ section#schedule .schedule-bg {
     width: 100%;
   }
 
+  .program__attend {
+    height: 100% !important;
+    grid-gap: 0 !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .program__attend img {
+    position: unset;
+  }
+
+  .testimonials__title h2 {
+    font-size: 3.5rem;
+  }
+
+  section#volunteers>img {
+    top: 7rem;
+    left: 5%;
+    width: 120px;
+  }
+
   #register__form {
     width: 95%;
   }
@@ -806,6 +828,85 @@ section#schedule .schedule-bg {
     text-align: center;
   }
 
+  .hero__text h1 {
+    font-size: 4rem;
+  }
+
+  #programs .programs__title h2 {
+    font-size: 2rem;
+  }
+
+  #programs .programs__title img {
+    width: 80px;
+  }
+
+  .program .program__text h3 {
+    font-size: 3rem;
+  }
+
+  .volunteers__title h2,
+  .volunteer__schedule h2 {
+    font-size: 2.5rem;
+  }
+
+  .testimonial__box .testimonial__text h4,
+  .volunteers__text h3,
+  .schedule__register h3 {
+    font-size: 2rem;
+  }
+
+  .testimonials__title h2 {
+    font-size: 2.5rem;
+  }
+
+  .testimonial__box {
+    padding: 3rem 1.5rem 5rem;
+    min-width: 100%;
+    min-height: 450px;
+    max-width: 100%;
+    text-align: center;
+    border-radius: 15rem 15rem 0 0;
+  }
+
+  .testimonial__box .testimonial__profile {
+    width: 100px;
+  }
+
+  section#volunteers>img {
+    position: unset;
+    width: 150px;
+    display: block;
+    margin: 0 auto 2rem;
+  }
+
+  .volunteer__schedule h2 {
+    text-align: center;
+  }
+
+  .volunteer__schedule .row h4 {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  .schedule__register .register__box {
+    padding: 3rem 1rem;
+    border-radius: 15rem 15rem 0 0;
+  }
+
+  #register__form {
+    width: 100%;
+    display: grid;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2.5rem;
+    grid-template:
+      "username"
+      "email"
+      "country"
+      "city"
+      "message"
+      "register";
+  }
+
   .footer__grid {
     grid-template:
       "footer_nav footer_nav"
@@ -835,6 +936,10 @@ section#schedule .schedule-bg {
 }
 
 @media (max-width: 376px) {
+
+  .volunteer__schedule .row h4 {
+    font-size: 1.5rem;
+  }
 
   .footer__grid {
     grid-template:
