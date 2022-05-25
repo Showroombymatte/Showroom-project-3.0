@@ -917,6 +917,10 @@ section#schedule .schedule-bg {
       "register";
   }
 
+  .footer__logo img {
+    width: 80px;
+  }
+
   .footer__grid {
     grid-template:
       "footer_nav footer_nav"
@@ -941,6 +945,31 @@ section#schedule .schedule-bg {
     justify-content: center;
     text-align: center;
     gap: 1rem;
+  }
+
+  .footer__credits h4 {
+    font-size: 2.5rem;
+  }
+
+  .footer__credits span {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  .footer__globe img {
+    width: 80px;
+  }
+
+  .footer__socials a {
+    font-size: 2rem;
+  }
+
+  .footer__attributions p {
+    font-size: 1rem;
+  }
+
+  .footer__attributions h4 {
+    font-size: 1.8rem;
   }
 
 }
