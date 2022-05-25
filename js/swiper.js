@@ -1,4 +1,4 @@
-const swiper = new Swiper('.products__wrapper', {
+const swiper = new Swiper('.swiper', {
   cssMode: true,
   navigation: {
     nextEl: '.swiper-button-next',

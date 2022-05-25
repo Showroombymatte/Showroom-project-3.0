@@ -553,6 +553,7 @@ section#products {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1.5rem;
 }
 
 .products__title>div hr {
@@ -563,14 +564,28 @@ section#products {
 }
 
 .products__slider {
+  position: relative;
+}
+
+.products__wrapper {
+  overflow: initial;
+}
+
+.product__image {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-x: scroll;
+  padding: 1.5rem;
+  max-width: 100%;
 }
 
-.products__slider::-webkit-scrollbar {
-  display: none;
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--tab-green-dark);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--tab-green-dark);
 }
 
 .product__image img {
@@ -916,6 +931,10 @@ section#products {
     display: none;
   }
 
+  .product__image img {
+    width: 16rem;
+  }
+
   .footer__grid {
     grid-template:
       "footer_nav footer_nav"
@@ -945,6 +964,11 @@ section#products {
 }
 
 @media (max-width: 376px) {
+
+  .preloader lottie-player {
+    width: 190px;
+    height: 190px;
+  }
 
   .work__title span::before {
     width: 80px;

@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/index.css" />
   <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -127,7 +128,7 @@
               where you can actively partcipate in making the world a better
               place.
             </p>
-            <button class="circle-btn">VOLUNTEER</button>
+            <a href="volunteering.html" class="circle-btn">VOLUNTEER</a>
           </div>
         </div>
       </section>
@@ -205,7 +206,7 @@
               and educator. Join us to “work the talk” when you apply to be
               part of the Reuse Volunteer team.
             </p>
-            <button class="circle-btn">APPLY NOW</button>
+            <a href="volunteering.html" class="circle-btn">APPLY NOW</a>
           </div>
         </div>
       </section>
@@ -223,19 +224,26 @@
               <hr />
             </div>
           </div>
-          <div class="products__slider">
-            <div class="product__image">
-              <img src="images/product-1.png" alt="product" />
+          <div class="products__slider swiper">
+            <div class="products__wrapper swiper-wrapper">
+              <div class="product__image swiper-slide">
+                <img src="images/sealed-bag.png" alt="product" />
+              </div>
+              <div class="product__image swiper-slide">
+                <img src="images/product-box.png" alt="product" />
+              </div>
+              <div class="product__image swiper-slide">
+                <img src="images/shopping-bag.png" alt="product" />
+              </div>
             </div>
-            <div class="product__image">
-              <img src="images/product-2.png" alt="product" />
-            </div>
-            <div class="product__image">
-              <img src="images/product-3.png" alt="product" />
-            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
           <div class="product__button">
-            <a href="#" class="circle-btn">VIEW ALL</a>
+            <a href="products.html" class="circle-btn">VIEW ALL</a>
           </div>
         </div>
       </section>
@@ -300,6 +308,8 @@
     });
   </script>
   <script src="js/script.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
 </body>
 
 </html>
