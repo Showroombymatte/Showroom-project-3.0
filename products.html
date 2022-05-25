@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/products.css" />
   <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -55,10 +56,10 @@
     </header>
 
     <main>
-      <div class="products__wrapper">
-        <div class="container">
+      <div class="products__wrapper swiper">
+        <div class="container swiper-wrapper">
           <!-- PRODUCT 1 -->
-          <div class="product__single">
+          <div class="product__single swiper-slide">
             <div class="product__image">
               <img src="images/product-box.png" alt="product">
             </div>
@@ -91,12 +92,16 @@
                     <option value="220" selected>220 <span>mm</span></option>
                   </select>
                 </div>
+
+                <div class="button">
+                  <button class="circle-btn" id="order-btn">PLACE ORDER</button>
+                </div>
               </div>
             </div>
           </div>
 
           <!-- PRODUCT 2 -->
-          <div class="product__single">
+          <div class="product__single swiper-slide">
             <div class="product__image">
               <img src="images/shopping-bag.png" alt="product">
             </div>
@@ -129,12 +134,15 @@
                     <option value="220" selected>220 <span>mm</span></option>
                   </select>
                 </div>
+                <div class="button">
+                  <button class="circle-btn" id="order-btn">PLACE ORDER</button>
+                </div>
               </div>
             </div>
           </div>
 
           <!-- PRODUCT 3 -->
-          <div class="product__single">
+          <div class="product__single swiper-slide">
             <div class="product__image">
               <img src="images/sealed-bag.png" alt="product">
             </div>
@@ -167,12 +175,16 @@
                     <option value="220" selected>220 <span>mm</span></option>
                   </select>
                 </div>
+
+                <div class="button">
+                  <button class="circle-btn" id="order-btn">PLACE ORDER</button>
+                </div>
               </div>
             </div>
           </div>
 
           <!-- PRODUCT 4 -->
-          <div class="product__single">
+          <div class="product__single swiper-slide">
             <div class="product__image">
               <img src="images/freight-box.png" alt="product">
             </div>
@@ -205,10 +217,19 @@
                     <option value="220" selected>220 <span>mm</span></option>
                   </select>
                 </div>
+
+                <div class="button">
+                  <button class="circle-btn" id="order-btn">PLACE ORDER</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </main>
 
@@ -216,6 +237,8 @@
 
 
   <script src="js/script.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
 </body>
 
 </html>

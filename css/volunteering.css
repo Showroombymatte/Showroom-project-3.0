@@ -75,23 +75,6 @@ p {
   }
 }
 
-.circle-btn {
-  display: inline-block;
-  padding: 0.6rem;
-  border: 20px solid transparent;
-  background-color: transparent;
-  background: url('../images/button-circle.png') no-repeat center center/cover;
-  outline: none;
-  cursor: pointer;
-  font-family: 'Amatic SC', cursive;
-  font-weight: 600;
-  font-size: 2rem;
-}
-
-.circle-btn:hover {
-  transform: scale(1.1);
-}
-
 /* --------------- HEADER ----------- */
 
 #header {

@@ -77,7 +77,8 @@ p {
 
 .circle-btn {
   display: inline-block;
-  padding: 0.6rem;
+  padding: 0.6rem 2rem;
+  margin-top: 1.5rem;
   border: 20px solid transparent;
   background-color: transparent;
   background: url('../images/button-circle.png') no-repeat center center/cover;
@@ -85,31 +86,11 @@ p {
   cursor: pointer;
   font-family: 'Amatic SC', cursive;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .circle-btn:hover {
   transform: scale(1.1);
-}
-
-/* -------------- PRELOADER ---------- */
-.preloader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--yellow);
-  opacity: 1;
-}
-
-.preloader.hide {
-  opacity: 0;
-  z-index: -1;
 }
 
 /* --------------- HEADER ----------- */
@@ -231,12 +212,16 @@ p {
 
 .products__wrapper {
   margin-top: 4rem;
+  overflow: initial;
 }
 
 .product__single {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   align-items: flex-start;
+  margin-bottom: 1rem;
+  padding: 0 1.5rem;
+  max-width: 100%;
 }
 
 .product__image {
@@ -254,7 +239,7 @@ p {
 .product__title {
   font-size: 3rem;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
   font-family: 'Lato', sans-serif;
   color: var(--tab-green-dark);
 }
@@ -273,6 +258,7 @@ p {
   padding: 1rem;
   border: 1px dashed #555;
   border-radius: 1rem;
+  max-width: 100%;
 }
 
 .specs-select {
@@ -301,13 +287,49 @@ select#height {
   font-family: inherit;
 }
 
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 100%;
+}
 
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--tab-green-dark);
+}
 
+.swiper-pagination-bullet-active {
+  background-color: var(--tab-green-dark);
+}
 
+.swiper-slide-active .product__image img {
+  animation: grow 1s ease forwards;
+}
 
+.swiper-slide-active .product__details .product__title {
+  animation: slide 1s ease forwards;
+}
 
+@keyframes grow {
+  from {
+    transform: scale(0.5);
+  }
 
+  to {
+    transform: scale(1);
+  }
+}
 
+@keyframes grow {
+  from {
+    transform: translateY(1rem);
+  }
+
+  to {
+    transform: translateY(1rem);
+  }
+}
 
 
 
@@ -381,6 +403,23 @@ select#height {
 
   .menu__text .credits {
     text-align: center;
+  }
+
+  .products__wrapper {
+    margin-top: 0;
+  }
+
+  .product__single {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  .product__image {
+    width: 100%;
+  }
+
+  .product__details {
+    width: 100%;
   }
 
 }
