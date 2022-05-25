@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/products.css" />
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <title>Reuse - Products</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header id="header">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="images/logo.svg" alt="reuse logo" />
+        </a>
+        <button id="menu-btn">Menu</button>
+        <nav id="menu">
+          <div class="menu__image">
+            <a href="#" class="menu__logo">
+              <img src="images/logo.svg" alt="reuse logo">
+            </a>
+            <div class="menu__lottie">
+              <lottie-player src="lottie/Axe man.json" background="transparent" speed="1"
+                style="width: 100%; height: 100%" loop autoplay></lottie-player>
+            </div>
+          </div>
+          <div class="menu__text">
+            <button id="menu-close">
+              <img src="images/close-button.svg" alt="close button">
+            </button>
+            <ul class="menu__links">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="volunteering.html">VOLUNTEERING</a></li>
+              <li><a href="#">PRODUCTS</a></li>
+              <li><a href="credits.html">CONTACT</a></li>
+            </ul>
+            <a href="credits.html" class="credits">Credits</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="products__wrapper swiper">
+        <div class="container swiper-wrapper">
+          <!-- PRODUCT 1 -->
+          <div class="product__single swiper-slide">
+            <div class="product__image">
+              <img src="images/product-box.png" alt="product">
+            </div>
+            <div class="product__details">
+              <h2 class="product__title">Product Box</h2>
+              <h4 class="product__subtitle">Care about the earth? If you’re not buying recycled products you are really
+                not recycling.</h4>
+              <p class="product__text">
+                We create generic non-branded boxes for businesses to utilize. Each of these boxes can be customized to
+                a specific dimension. This box is made from only recycled paper products. This is a good way to show
+                your customers you give a hoot about recycling!
+              </p>
+              <div class="product__specs">
+                <div class="specs-select">
+                  <label for="width">Width</label>
+                  <select name="width" id="width">
+                    <option value="150">150 <span>mm</span></option>
+                    <option value="180">180 <span>mm</span></option>
+                    <option value="200">200 <span>mm</span></option>
+                    <option value="220" selected>220 <span>mm</span></option>
+                  </select>
+                </div>
+
+                <div class="specs-select">
+                  <label for="height">Height</label>
+                  <select name="height" id="height">
+                    <option value="150">150 <span>mm</span></option>
+                    <option value="180">180 <span>mm</span></option>
+                    <option value="200">200 <span>mm</span></option>
+                    <option value="220" selected>220 <span>mm</span></option>
+                  </select>
+                </div>
+
+                <div class="button">
+                  <button class="circle-btn" id="order-btn">PLACE ORDER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT 2 -->
+          <div class="product__single swiper-slide">
+            <div class="product__image">
+              <img src="images/shopping-bag.png" alt="product">
+            </div>
+            <div class="product__details">
+              <h2 class="product__title">Shopping Bag</h2>
+              <h4 class="product__subtitle">Care about the earth? If you’re not buying recycled products you are really
+                not recycling.</h4>
+              <p class="product__text">
+                We create generic non-branded boxes for businesses to utilize. Each of these boxes can be customized to
+                a specific dimension. This box is made from only recycled paper products. This is a good way to show
+                your customers you give a hoot about recycling!
+              </p>
+              <div class="product__specs">
+                <div class="specs-select">
+                  <label for="width">Width</label>
+                  <select name="width" id="width">
+                    <option value="150">150 <span>mm</span></option>
+                    <option value="180">180 <span>mm</span></option>
+                    <option value="200">200 <span>mm</span></option>
+                    <option value="220" selected>220 <span>mm</span></option>
+                  </select>
+                </div>
+
+                <div class="specs-select">
+                  <label for="height">Height</label>
+                  <select name="height" id="height">
+                    <option value="150">150 <span>mm</span></option>
+                    <option value="180">180 <span>mm</span></option>
+                    <option value="200">200 <span>mm</span></option>
+                    <option value="220" selected>220 <span>mm</span></option>
+                  </select>
+                </div>
+                <div class="button">
+                  <button class="circle-btn" id="order-btn">PLACE ORDER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT 3 -->
+          <div class="product__single swiper-slide">
+            <div class="product__image">
+              <img src="images/sealed-bag.png" alt="product">
+            </div>
+            <div class="product__details">
+              <h2 class="product__title">Sealed Bag</h2>
+              <h4 class="product__subtitle">Care about the earth? If you’re not buying recycled products you are really
+                not recycling.</h4>
+              <p class="product__text">
+                We create generic non-branded boxes for businesses to utilize. Each of these boxes can be customized to
+                a specific dimension. This box is made from only recycled paper products. This is a good way to show
+                your customers you give a hoot about recycling!
+              </p>
+              <div class="product__specs">
+                <div class="specs-select">
+                  <label for="width">Width</label>
+                  <select name="width" id="width">
+                    <option value="150">150 <span>mm</span></option>
+                    <option value="180">180 <span>mm</span></option>
+                    <option value="200">200 <span>mm</span></option>
+                    <option value="220" selected>220 <span>mm</span></option>
+                  </select>
+                </div>
+
+                <div class="specs-select">
+                  <label for="height">Height</label>
+                  <select name="height" id="height">
+                    <option value="150">150 <span>mm</span></option>
+                    <option value="180">180 <span>mm</span></option>
+                    <option value="200">200 <span>mm</span></option>
+                    <option value="220" selected>220 <span>mm</span></option>
+                  </select>
+                </div>
+
+                <div class="button">
+                  <button class="circle-btn" id="order-btn">PLACE ORDER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT 4 -->
+          <div class="product__single swiper-slide">
+            <div class="product__image">
+              <img src="images/freight-box.png" alt="product">
+            </div>
+            <div class="product__details">
+              <h2 class="product__title">Freight Box</h2>
+              <h4 class="product__subtitle">Care about the earth? If you’re not buying recycled products you are really
+                not recycling.</h4>
+              <p class="product__text">
+                We create generic non-branded boxes for businesses to utilize. Each of these boxes can be customized to
+                a specific dimension. This box is made from only recycled paper products. This is a good way to show
+                your customers you give a hoot about recycling!
+              </p>
+              <div class="product__specs">
+                <div class="specs-select">
+                  <label for="width">Width</label>
+                  <select name="width" id="width">
+                    <option value="150">150 <span>mm</span></option>
+                    <option value="180">180 <span>mm</span></option>
+                    <option value="200">200 <span>mm</span></option>
+                    <option value="220" selected>220 <span>mm</span></option>
+                  </select>
+                </div>
+
+                <div class="specs-select">
+                  <label for="height">Height</label>
+                  <select name="height" id="height">
+                    <option value="150">150 <span>mm</span></option>
+                    <option value="180">180 <span>mm</span></option>
+                    <option value="200">200 <span>mm</span></option>
+                    <option value="220" selected>220 <span>mm</span></option>
+                  </select>
+                </div>
+
+                <div class="button">
+                  <button class="circle-btn" id="order-btn">PLACE ORDER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </main>
+
+  </div>
+
+
+  <script src="js/script.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
+</body>
+
+</html>
