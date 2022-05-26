@@ -213,6 +213,7 @@ p {
 .products__wrapper {
   margin-top: 4rem;
   overflow: initial;
+  position: relative;
 }
 
 .product__single {
@@ -302,38 +303,6 @@ select#height {
 .swiper-pagination-bullet-active {
   background-color: var(--tab-green-dark);
 }
-
-.swiper-slide-active .product__image img {
-  animation: grow 1s ease forwards;
-}
-
-.swiper-slide-active .product__details .product__title {
-  animation: slide 1s ease forwards;
-}
-
-@keyframes grow {
-  from {
-    transform: scale(0.5);
-  }
-
-  to {
-    transform: scale(1);
-  }
-}
-
-@keyframes grow {
-  from {
-    transform: translateY(1rem);
-  }
-
-  to {
-    transform: translateY(1rem);
-  }
-}
-
-
-
-
 
 
 
