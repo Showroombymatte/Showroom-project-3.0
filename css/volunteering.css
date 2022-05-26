@@ -270,7 +270,7 @@ section#programs {
 
 .program__attend {
   position: relative;
-  height: 40rem;
+  height: 45rem;
   align-items: start !important;
   grid-gap: 3rem !important;
 }
@@ -280,6 +280,7 @@ section#programs {
   top: 0;
   left: 0;
   width: 100%;
+  max-width: 100%;
 }
 
 .program__attend .cloud {
