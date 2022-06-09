@@ -447,12 +447,25 @@ section#care .container {
 section#locations {
   padding: 1rem 0;
   background-color: var(--light-green);
+  position: relative;
+}
+
+#locations .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+  background: var(--tab-green-dark);
 }
 
 #locations .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 1rem;
+  z-index: 100;
+  position: relative;
 }
 
 .locations__image img {
@@ -757,6 +770,11 @@ section#products {
   #locations .container {
     grid-template-columns: 1fr;
     padding: 0;
+  }
+
+  #locations .bg {
+    display: none;
+    width: 0;
   }
 
   .locations__image img {
