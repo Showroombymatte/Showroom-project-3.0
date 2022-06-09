@@ -88,7 +88,7 @@ p {
 }
 
 #header .logo img {
-  width: 100px;
+  width: 80px;
   object-fit: cover;
 }
 
@@ -131,7 +131,7 @@ p {
 }
 
 .menu__logo img {
-  width: 100px;
+  width: 80px;
 }
 
 .menu__lottie {
@@ -781,7 +781,7 @@ section#schedule .schedule-bg {
   }
 
   #header .logo img {
-    width: 80px;
+    width: 65px;
   }
 
   #menu {
@@ -919,7 +919,7 @@ section#schedule .schedule-bg {
   }
 
   .footer__logo img {
-    width: 80px;
+    width: 65px;
   }
 
   .footer__grid {

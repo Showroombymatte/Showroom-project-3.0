@@ -86,7 +86,7 @@ p {
 }
 
 #header .logo img {
-    width: 100px;
+    width: 70px;
     object-fit: cover;
 }
 
@@ -129,7 +129,7 @@ p {
 }
 
 .menu__logo img {
-    width: 100px;
+    width: 70px;
 }
 
 .menu__lottie {
@@ -295,7 +295,7 @@ p {
     }
 
     #header .logo img {
-        width: 80px;
+        width: 65px;
     }
 
     #menu {

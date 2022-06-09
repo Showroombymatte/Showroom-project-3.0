@@ -124,7 +124,7 @@ p {
 }
 
 #header .logo img {
-  width: 100px;
+  width: 70px;
   object-fit: cover;
 }
 
@@ -167,7 +167,7 @@ p {
 }
 
 .menu__logo img {
-  width: 100px;
+  width: 70px;
 }
 
 .menu__lottie {
@@ -845,7 +845,7 @@ section#products {
   }
 
   #header .logo img {
-    width: 80px;
+    width: 65px;
   }
 
   #menu {
@@ -936,7 +936,7 @@ section#products {
   }
 
   .footer__logo img {
-    width: 80px;
+    width: 65px;
   }
 
   .footer__grid {
