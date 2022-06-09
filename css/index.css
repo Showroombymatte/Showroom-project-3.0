@@ -378,6 +378,12 @@ section#work {
   justify-content: center;
 }
 
+.work__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .work__title {
   font-size: 3.5rem;
   margin-bottom: 2rem;
@@ -388,14 +394,14 @@ section#work {
   color: var(--text-green);
 }
 
-.work__title span::before {
+/* .work__title span::before {
   content: " ";
   position: absolute;
   width: 100px;
   height: 100px;
   top: -150%;
   background: url('../images/arrow-curve-down.svg') no-repeat center center/contain;
-}
+} */
 
 .work__text p {
   font-weight: 300;

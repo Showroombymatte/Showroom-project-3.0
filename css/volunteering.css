@@ -293,11 +293,14 @@ section#programs {
   position: relative;
 }
 
-.program__community-dev .program__text img,
-.program__recycle-educator .program__text img {
-  width: 80px;
+.program__community-dev .program__text lottie-player,
+.program__recycle-educator .program__text lottie-player {
   display: block;
   margin: 0 auto;
+}
+
+.program__recycle-educator .program__text {
+  width: 100%;
 }
 
 
