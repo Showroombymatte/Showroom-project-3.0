@@ -58,6 +58,7 @@ h6 {
 
 p {
   line-height: 1.7;
+  font-weight: 300;
 }
 
 /* -------------- UTILITY CLASSES ------------------- */
@@ -321,7 +322,7 @@ section#aim {
   position: absolute;
   top: 0;
   right: 0;
-  width: 120px;
+  width: 100px;
 }
 
 .aim__title {
@@ -330,11 +331,10 @@ section#aim {
 }
 
 .aim__title img {
-  width: 12rem;
+  width: 10rem;
 }
 
 .aim__text p {
-  font-weight: 300;
   margin-bottom: 2rem;
 }
 
@@ -346,11 +346,12 @@ section#aim {
 
 .aim__plastic-recycling img {
   margin-right: 1rem;
-  width: 120px;
+  width: 110px;
 }
 
 .aim__plastic-recycling h3 {
-  font-size: 3rem;
+  font-size: 2.8rem;
+  font-weight: 300;
 }
 
 .aim__lottie {
@@ -394,17 +395,7 @@ section#work {
   color: var(--text-green);
 }
 
-/* .work__title span::before {
-  content: " ";
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  top: -150%;
-  background: url('../images/arrow-curve-down.svg') no-repeat center center/contain;
-} */
-
 .work__text p {
-  font-weight: 300;
   margin-bottom: 1.5rem;
 }
 
@@ -488,11 +479,12 @@ section#locations {
 .locations__text h3 {
   font-size: 3.5rem;
   margin-bottom: 2rem;
+  font-weight: 400;
 }
 
 .location-tabs div {
   background-color: var(--tab-green);
-  padding: 1rem;
+  padding: 0.6rem 1rem;
   margin-bottom: 1rem;
   margin-right: 0.5rem;
   display: inline-block;
@@ -544,7 +536,7 @@ section#volunteering {
 }
 
 .volunteering__title h2 {
-  font-size: 4.5rem;
+  font-size: 4.2rem;
   font-weight: 700;
   position: relative;
   display: inline-block;
@@ -631,7 +623,7 @@ section#products {
 }
 
 .footer__logo img {
-  width: 100px;
+  width: 80px;
 }
 
 .footer__grid {
@@ -695,11 +687,11 @@ section#products {
 }
 
 .footer__attributions p {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
 }
 
 .footer__attributions h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 
@@ -879,6 +871,10 @@ section#products {
       "menu_image";
   }
 
+  #menu-btn {
+    font-weight: 400;
+  }
+
   .menu__image {
     grid-area: menu_image;
   }
@@ -930,11 +926,11 @@ section#products {
   }
 
   .aim__plastic-recycling img {
-    width: 100px;
+    width: 70px;
   }
 
   .aim__plastic-recycling h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .care__lottie {
@@ -996,6 +992,7 @@ section#products {
   .footer__credits span {
     font-size: 2rem;
     line-height: 1.5;
+    font-weight: 300;
   }
 
   .footer__globe img {

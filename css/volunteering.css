@@ -59,6 +59,7 @@ h6 {
 
 p {
   line-height: 1.7;
+  font-weight: 300;
 }
 
 /* -------------- UTILITY CLASSES ------------------- */
@@ -573,7 +574,7 @@ section#schedule .schedule-bg {
 }
 
 .footer__logo img {
-  width: 100px;
+  width: 80px;
 }
 
 .footer__grid {
@@ -637,11 +638,11 @@ section#schedule .schedule-bg {
 }
 
 .footer__attributions p {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
 }
 
 .footer__attributions h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 
@@ -792,6 +793,10 @@ section#schedule .schedule-bg {
     grid-template:
       "menu_text"
       "menu_image";
+  }
+
+  #menu-btn {
+    font-weight: 400;
   }
 
   .menu__image {
@@ -958,6 +963,7 @@ section#schedule .schedule-bg {
   .footer__credits span {
     font-size: 2rem;
     line-height: 1.5;
+    font-weight: 300;
   }
 
   .footer__globe img {

@@ -59,6 +59,7 @@ h6 {
 
 p {
   line-height: 1.7;
+  font-weight: 300;
 }
 
 /* -------------- UTILITY CLASSES ------------------- */
@@ -334,6 +335,10 @@ select#height {
     grid-template:
       "menu_text"
       "menu_image";
+  }
+
+  #menu-btn {
+    font-weight: 400;
   }
 
   .menu__image {
