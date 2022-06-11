@@ -295,8 +295,12 @@ p {
         font-size: 15px;
     }
 
+    p {
+        font-size: 0.95rem;
+    }
+
     #header .logo img {
-        width: 65px;
+        width: 55px;
     }
 
     #menu {

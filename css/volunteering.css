@@ -784,8 +784,13 @@ section#schedule .schedule-bg {
     font-size: 15px;
   }
 
+  p {
+    line-height: 1.5;
+    font-size: 0.95rem;
+  }
+
   #header .logo img {
-    width: 65px;
+    width: 55px;
   }
 
   #menu {
@@ -927,7 +932,7 @@ section#schedule .schedule-bg {
   }
 
   .footer__logo img {
-    width: 65px;
+    width: 55px;
   }
 
   .footer__grid {
@@ -975,11 +980,11 @@ section#schedule .schedule-bg {
   }
 
   .footer__attributions p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .footer__attributions h4 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
 }
