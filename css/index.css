@@ -228,6 +228,7 @@ p {
 }
 
 .menu__links li a {
+  display: inline-block;
   font-family: 'Amatic SC', cursive;
   font-size: 2.8rem;
   font-weight: 700;
@@ -346,7 +347,7 @@ section#aim {
 
 .aim__plastic-recycling img {
   margin-right: 1rem;
-  width: 110px;
+  width: 90px;
 }
 
 .aim__plastic-recycling h3 {
@@ -363,7 +364,8 @@ section#aim {
 
 /* ----------- WORK SECTION ------------------ */
 section#work {
-  padding: 1rem 0;
+  padding: 1rem 0 0;
+  margin-bottom: -9rem;
 }
 
 #work .container {
@@ -407,7 +409,7 @@ section#work {
 /* -------------- CARE SECTION -------------- */
 section#care {
   background: url('../images/bg-vector.png') no-repeat center center/cover;
-  padding: 8rem 0;
+  padding: 10rem 0 6rem;
 }
 
 section#care .container {
@@ -454,6 +456,7 @@ section#locations {
 #locations .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
   grid-column-gap: 1rem;
   z-index: 100;
   position: relative;
@@ -697,6 +700,22 @@ section#products {
 
 /* -------------- MEDIA QUERIES -------------- */
 
+@media (min-width: 1023px) {
+  .locations__text h3 {
+    font-size: 3.8rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .location-tabs div {
+    padding: 1rem 1.2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .location-tabs div p {
+    font-size: 1.1rem;
+  }
+}
+
 @media (max-width: 769px) {
 
   .menu__links li a {
@@ -743,7 +762,7 @@ section#products {
   }
 
   section#care {
-    padding: 2rem 0;
+    padding: 8rem 0 2rem;
   }
 
   #care .container {
@@ -936,6 +955,11 @@ section#products {
 
   .aim__plastic-recycling h3 {
     font-size: 1.5rem;
+  }
+
+  section#work {
+    padding: 1rem 0 0;
+    margin-bottom: -7rem;
   }
 
   .care__lottie {
