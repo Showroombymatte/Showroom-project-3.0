@@ -23,7 +23,7 @@ const menuAnimation = () => {
     x: 50,
     opacity: 0,
     stagger: {
-      amount: 0.4
+      amount: 0.6
     }
   })
 }

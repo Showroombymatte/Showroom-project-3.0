@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/volunteering.css" />
   <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
   <title>Reuse - Volunteering</title>
 </head>
 
@@ -54,12 +55,12 @@
     </header>
 
     <main>
-      <section id="hero">
+      <section id="hero" class="volunteer__hero">
         <div class="container">
-          <div class="hero__image">
+          <div class="hero__image volunteer__hero__image">
             <img src="images/volunteer_hero.svg" alt="volunteer">
           </div>
-          <div class="hero__text">
+          <div class="hero__text volunteer__hero__text">
             <h1>
               HELP SAVE THE <span>TREES</span>
             </h1>
@@ -180,7 +181,6 @@
       </section>
 
       <section id="schedule">
-        <!-- <img src="images/background.png" alt="" class="schedule-bg"> -->
         <div class="container">
           <div class="volunteer__schedule">
             <img src="images/Bottle.svg" alt="">
@@ -283,6 +283,72 @@
   </div>
 
   <script src="js/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
+  <script>
+    let tl = gsap.timeline();
+
+    tl.from('.volunteer__hero__image', 1, {
+      delay: 0.5,
+      opacity: 0,
+      y: 50,
+    }).from(['.volunteer__hero__text h1', '.volunteer__hero__text p'], 1, {
+      opacity: 0,
+      y: 50,
+      stagger: {
+        amount: 0.3,
+      }
+    }, '-=0.8')
+
+    let educator = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.program__recycle-educator',
+        start: 'top 60%'
+      }
+    }).from('.program__recycle-educator .program__text', 1, {
+      opacity: 0,
+      y: 50,
+    }).from('.program__recycle-educator .program__image', {
+      opacity: 0,
+      y: 50
+    }, '-=0.8')
+
+
+    let attend = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.program__attend',
+        start: 'top 60%'
+      }
+    }).from('.program__attend img', 1, {
+      opacity: 0,
+    }).from('.program__attend .program__text', {
+      opacity: 0,
+      y: 50
+    }, '-=0.5')
+
+
+    let community = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.program__community-dev',
+        start: 'top 60%'
+      }
+    }).from('.program__community-dev .program__text', 1, {
+      opacity: 0,
+      y: 50,
+    }).from('.program__community-dev .program__image', {
+      opacity: 0,
+      y: 50
+    }, '-=0.8')
+
+    let volunteers = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.volunteers__image',
+        start: 'top 60%'
+      }
+    }).from('.volunteers__image', 1.5, {
+      opacity: 0,
+      y: 50,
+    })
+  </script>
   <script src="js/script.js"></script>
 </body>
 

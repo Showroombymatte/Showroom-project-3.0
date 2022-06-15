@@ -311,16 +311,112 @@
     </footer>
   </div>
 
+  <script src="js/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
   <script>
     const preloader = document.querySelector(".preloader");
     window.addEventListener("DOMContentLoaded", () => {
-      setTimeout(() => preloader.classList.add("hide"), 5000);
+      setTimeout(anim, 4000);
     });
+
+    const anim = () => {
+      preloader.classList.add('hide');
+      let hero = gsap.timeline();
+
+      hero.from('.hero__text h1', 1, {
+        y: 50,
+        opacity: 0,
+        delay: 0.5,
+      }).from('.hero__text p', 1, {
+        y: 50,
+        opacity: 0,
+      }, '-=0.5').from('.hero__form', {
+        y: 50,
+        opacity: 0,
+      }, '-=0.5')
+    }
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    let aim = gsap.timeline({
+      scrollTrigger: {
+        trigger: '#aim',
+        start: 'top 60%'
+      }
+    }).from('.aim__text', 1, {
+      opacity: 0,
+      y: 50,
+    }).from('.aim__lottie', {
+      opacity: 0,
+      y: 50
+    }, '-=0.5')
+
+    let work = gsap.timeline({
+      scrollTrigger: {
+        trigger: '#work',
+        start: 'top 60%'
+      }
+    }).from('.work__text', 1, {
+      opacity: 0,
+      y: 50,
+    }).from('.work__lottie', {
+      opacity: 0,
+      y: 50
+    }, '-=0.5')
+
+    let locationtl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.locations__text',
+        start: 'top 60%'
+      }
+    }).from('.location-tabs div', 1, {
+      opacity: 0,
+      y: 50,
+      stagger: {
+        amount: 0.3,
+      }
+    })
+
+    let vol = gsap.timeline({
+      scrollTrigger: {
+        trigger: '#volunteering',
+        start: 'top 60%'
+      }
+    }).from('.volunteering__image', 1, {
+      opacity: 0,
+      y: 50,
+    }).from('.volunteering__text', {
+      opacity: 0,
+      y: 50
+    }, '-=0.5')
   </script>
   <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/gsap.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/swiper.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      cssMode: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      mousewheel: true,
+      keyboard: true,
+    })
+
+    const slideAnimation = () => {
+      let tl = gsap.timeline();
+
+      tl.from(['.swiper-slide-next img', '.swiper-slide-prev img'], 0.5, {
+        scale: 1.5,
+        opacity: 0,
+      })
+    }
+
+    swiper.on('slideChange', slideAnimation);
+  </script>
 </body>
 
 </html>
